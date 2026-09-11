@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600;700&family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
 const SITE_SETTINGS = {
-  'phoneNumber': '+79034551278',
-  'psychicName': 'Ася',
+  'phoneNumber': '+79034724008',
+  'psychicName': 'Раиса',
   'city': 'Краснодар',
   'address': 'г. Москва, ул. Северная, д. 324, офис 45',
   'enableRedirect': false,
@@ -21,17 +21,16 @@ const SITE_SETTINGS = {
   'siteUrl': 'https://gadalkaritm.ru/',
   'whatsappMessage': 'Здравствуйте, хочу обратиться к вам за помощью.',
   'telegramEnabled': 1,
-  'telegramNickname': 'mag_taro8',
+  'telegramNickname': 'TTaro_08',
   'yandexMetrikaId': '112304419',
   'psychicImageURL': 'https://raw.githubusercontent.com/antomimpuls/gadalkaritm.ru/main/JXWOBZEoJlCS0yUL_xaJxXffKKfWLBdwunNs3z2DM3aJBHL1-al_J4iYyLcL9cmrFnC886Qd9quu27W3SbQTaBBR.jpg',
   'workingHours': 'ежедневно 08:30-21:30',
   'responseTime': '6-14 минут',
-  'metrikaMessengerVisible': false
-,
-  "maxEnabled": false,
-  "maxUrl": ""
+  'metrikaMessengerVisible': false,
+  'maxEnabled': false,
+  'maxUrl': ""
 };
-const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'Ася';
+const PSYCHIC_NAME=SITE_SETTINGS.psychicName||'Раиса';
 const PHONE_DIGITS=(SITE_SETTINGS.phoneNumber||'').replace(/\D/g,'');
 const WHATSAPP_MESSAGE=PSYCHIC_NAME ? `Здравствуйте, ${PSYCHIC_NAME}! Хочу обратиться к вам за помощью.` : 'Здравствуйте, хочу обратиться к вам за помощью.';
 const ENCODED_MESSAGE=encodeURIComponent(WHATSAPP_MESSAGE);
@@ -1248,7 +1247,7 @@ function replaceNamePlaceholders(name){
 }
 
 function setImagesAndTexts(){
-    const psychicName = SETTINGS.psychicName || 'Ася';
+    const psychicName = SETTINGS.psychicName || 'Раиса';
     replaceNamePlaceholders(psychicName);
     const heroName = document.getElementById('heroName');
     if (heroName) {
